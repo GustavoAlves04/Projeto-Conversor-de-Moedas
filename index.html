@@ -31,9 +31,9 @@
 
             <label class="label-two">
                 <p>Converter <b>para</b></p>
-                <select class="select-two">
+                <select class="select-two" id="select-convert">
                     <option>
-                        U$ Dolar Americano
+                        U$ Dólar Americano
                     </option>
                     <option>
                         € Euro
@@ -43,32 +43,32 @@
 
             <label class="label-three">
                 <p>Valor</p>
-                <input placeholder="R$ 10.000,00">
+                <input id="value-real" placeholder="Digite o valor desejado">
             </label>
 
-            <button type="button">Converter</button>
+            <button id="button" type="button">Converter</button>
 
             <section>
 
                 <div class="div-section">
                     <img src="./img/brasil 2.png" alt="bandeira-brasileira">
                     <p class="moeda">Real</p>
-                    <p class="valor">R$ 10.000,00</p>
+                    <p class="valor" id="valor-real">R$ 10.000,00</p>
                 </div>
 
                 <img src="./img/Vector.png" alt="seta">
 
                 <div class="div-section">
-                    <img src="./img/estados-unidos (1) 1.png" alt="bandeira-conversão">
-                    <p class="moeda">Dólar Americano</p>
-                    <p class="valor">US$ 2.000,00</p>
+                    <img src="./img/eua.png" alt="bandeira-conversão" id="img-bandeira-eua">
+                    <p class="moeda" id="moeda">Dólar Americano</p>
+                    <p class="valor" id="valor-dolar">US$ 2.000,00</p>
                 </div>
 
             </section>
         </main>
 
     </div>
-    <script src="script.js"></script>
 </body>
+    <script src="script.js"></script>
 
 </html>
