@@ -3,7 +3,7 @@ const select = document.getElementById("value-troca")
 
 const dolar = 5.20
 const euro = 5.55
-const bitcoin = 1
+const bitcoin = 0.0000096
 
 const convertValue = () => {
   const inputReal = document.getElementById("value-real").value
@@ -29,10 +29,10 @@ const convertValue = () => {
       }).format(inputReal / euro)
   }
   if (select.value === "₿ Bitcoin") {
-    valorDolar.innerHTML = new Intl.NumberFormat("de-DE", {
+    valorDolar.innerHTML = new Intl.NumberFormat( {
         style: "currency",
         currency: "BTC",
-      }).format(bitcoin * inputReal)
+      }).format(inputReal * bitcoin)
   }
   
 
