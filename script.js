@@ -10,6 +10,7 @@ const convertValue = async () => {
 
   const dolar = data.USDBRL.high
   const euro = data.EURBRL.high
+  const bitcoin = data.BTCBRL.high
 
   realText.innerHTML = new Intl.NumberFormat("pt-BR", {
     style: "currency",
